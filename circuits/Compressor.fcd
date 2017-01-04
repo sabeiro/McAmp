@@ -1,0 +1,208 @@
+[FIDOCAD]
+FJC B 0.5
+MC 100 44 0 0 lib_agg.116
+FCJ
+TY 108 75 4 3 0 0 0 Asana++Math NE575
+TY 110 49 4 3 0 0 0 Asana++Math 
+MC 140 90 0 0 450
+FCJ
+TY 150 100 4 3 0 0 0 Asana++Math 
+TY 130 100 4 3 0 0 0 Asana++Math 9v
+LI 105 70 100 70 0
+LI 100 70 100 75 0
+LI 100 75 105 75 0
+MC 95 80 0 0 180
+FCJ
+TY 115 135 4 3 0 0 0 Asana++Math 
+TY 84 82 4 3 0 0 0 Asana++Math 10μ
+MC 95 90 0 0 045
+LI 95 90 105 90 0
+LI 105 80 95 80 0
+LI 135 90 140 90 0
+LI 95 80 95 45 0
+LI 95 45 105 45 0
+LI 105 50 100 50 0
+LI 100 50 100 55 0
+LI 100 55 105 55 0
+LI 110 45 110 50 0
+LI 110 50 115 47 0
+LI 115 47 109 45 0
+LI 105 50 110 50 0
+LI 105 45 110 45 0
+LI 115 47 115 55 0
+LI 115 55 105 55 0
+LI 130 85 125 83 0
+LI 125 83 130 80 0
+LI 130 80 130 85 0
+LI 130 85 135 85 0
+LI 135 80 135 80 0
+LI 135 80 130 80 0
+LI 125 83 125 75 0
+LI 125 75 135 75 0
+TY 109 48 4 3 0 0 0 Asana++Math -
+TY 131 78 4 3 0 0 0 Asana++Math -
+MC 160 80 0 0 ihram.res
+FCJ
+TY 160 210 4 3 0 0 0 Asana++Math 
+TY 167 81 4 3 0 0 0 Asana++Math 22k
+MC 150 95 1 0 170
+FCJ
+TY 66 187 4 3 0 0 0 Asana++Math 
+TY 146 102 4 3 0 0 0 Asana++Math 100n
+LI 150 95 140 95 0
+MC 160 65 1 1 180
+FCJ
+TY 225 85 4 3 0 0 0 Asana++Math 
+TY 162 57 4 3 0 0 0 Asana++Math 2μ2
+MC 150 105 0 0 045
+LI 135 70 145 70 0
+LI 100 30 140 30 0
+LI 135 45 139 45 0
+MC 145 50 0 0 ihram.res
+FCJ
+TY 105 170 4 3 0 0 0 Asana++Math 
+TY 148 43 4 3 0 0 0 Asana++Math 27k
+MC 145 60 0 0 ihram.res
+FCJ
+TY 105 180 4 3 0 0 0 Asana++Math 
+TY 149 53 4 3 0 0 0 Asana++Math 27k
+MC 160 55 1 1 180
+FCJ
+TY 240 5 4 3 0 0 0 Asana++Math 
+TY 162 46 4 3 0 0 0 Asana++Math 10μ
+LI 140 30 140 55 0
+LI 140 55 135 55 0
+LI 145 45 141 45 0
+LI 135 50 139 50 0
+LI 145 50 141 50 0
+LI 145 45 145 48 0
+LI 145 51 145 60 0
+LI 145 60 135 60 0
+LI 160 50 160 60 0
+MC 145 60 0 0 180
+FCJ
+TY 115 140 4 3 0 0 0 Asana++Math 
+TY 120 60 4 3 0 0 0 Asana++Math 4μ7
+LI 170 55 170 65 0
+LI 170 65 175 65 0
+MC 175 65 0 0 045
+LI 135 65 140 65 0
+LI 150 65 160 65 0
+LI 135 75 180 75 0
+MC 145 70 0 0 ihram.res
+FCJ
+TY 105 190 4 3 0 0 0 Asana++Math 
+TY 149 64 4 3 0 0 0 Asana++Math 560k
+LI 160 70 170 70 0
+LI 170 70 170 65 0
+MC 160 95 1 0 170
+FCJ
+TY 71 192 4 3 0 0 0 Asana++Math 
+TY 162 98 4 3 0 0 0 Asana++Math 470n
+MC 160 80 1 0 ihram.res
+FCJ
+TY 30 80 4 3 0 0 0 Asana++Math 
+TY 150 85 4 3 0 0 0 Asana++Math 10k
+LI 135 80 160 80 0
+LI 175 80 175 75 0
+MC 160 105 0 0 045
+LI 141 60 141 69 0
+LI 141 72 141 74 0
+LI 141 77 141 79 0
+LI 141 82 141 85 0
+LI 135 85 141 85 0
+MC 140 105 0 0 045
+MC 100 30 1 0 ihram.res
+FCJ
+TY -30 30 4 3 0 0 0 Asana++Math 
+TY 102 35 4 3 0 0 0 Asana++Math 100k
+MC 100 30 2 0 170
+FCJ
+TY -82 21 4 3 0 0 0 Asana++Math 
+TY 95 20 4 3 0 0 0 Asana++Math 470n
+MC 55 40 0 0 300
+FCJ
+TY 75 35 4 3 0 0 0 Asana++Math bc550b
+TY 65 45 4 3 0 0 0 Asana++Math 
+LI 90 30 70 30 0
+MC 70 50 0 0 ihram.res
+FCJ
+TY 30 170 4 3 0 0 0 Asana++Math 
+TY 76 43 4 3 0 0 0 Asana++Math 100
+MC 70 50 1 0 ihram.res
+FCJ
+TY -45 15 4 3 0 0 0 Asana++Math 
+TY 64 54 4 3 0 0 0 Asana++Math 1k
+MC 70 65 0 0 045
+MC 85 55 0 0 180
+FCJ
+TY 120 145 4 3 0 0 0 Asana++Math 
+TY 77 60 4 3 0 0 0 Asana++Math 10μ
+MC 85 65 0 0 045
+LI 85 50 85 55 0
+MC 55 40 1 0 ihram.res
+FCJ
+TY -40 20 4 3 0 0 0 Asana++Math 
+TY 57 47 4 3 0 0 0 Asana++Math 33k
+MC 55 55 0 0 045
+MC 55 40 2 0 170
+FCJ
+TY -37 -44 4 3 0 0 0 Asana++Math 
+TY 39 32 4 3 0 0 0 Asana++Math 470n
+MC 45 55 3 0 170
+FCJ
+TY 144 -42 4 3 0 0 0 Asana++Math 
+TY 34 44 4 3 0 0 0 Asana++Math 100p
+MC 45 55 0 0 045
+MC 30 40 1 0 ihram.res
+FCJ
+TY -85 5 4 3 0 0 0 Asana++Math 
+TY 22 42 4 3 0 0 0 Asana++Math 2k2
+LI 30 40 45 40 0
+MC 30 55 0 0 045
+LI 45 40 45 45 0
+MC 15 40 0 0 960
+MC 15 55 0 0 045
+LI 15 40 30 40 0
+MC 55 25 1 0 ihram.res
+FCJ
+TY -40 5 4 3 0 0 0 Asana++Math 
+TY 57 28 4 3 0 0 0 Asana++Math 82k
+MC 70 15 1 0 ihram.res
+FCJ
+TY -25 -5 4 3 0 0 0 Asana++Math 
+TY 60 18 4 3 0 0 0 Asana++Math 2k7
+MC 50 25 1 0 180
+FCJ
+TY -85 105 4 3 0 0 0 Asana++Math 
+TY 44 17 4 3 0 0 0 Asana++Math 100μ
+LI 55 25 55 15 0
+LI 55 15 70 15 0
+MC 55 15 2 0 ihram.res
+FCJ
+TY 75 -80 4 3 0 0 0 Asana++Math 
+TY 44 8 4 3 0 0 0 Asana++Math 100
+MC 40 15 0 0 180
+FCJ
+TY 120 150 4 3 0 0 0 Asana++Math 
+TY 29 21 4 3 0 0 0 Asana++Math 100μ
+LI 40 25 45 25 0
+MC 40 25 0 0 045
+MC 20 15 1 1 450
+FCJ
+TY 110 130 4 3 0 0 0 Asana++Math 
+TY 22 8 4 3 0 0 0 Asana++Math 9v
+MC 180 75 1 1 180
+FCJ
+TY 260 25 4 3 0 0 0 Asana++Math 
+TY 182 67 4 3 0 0 0 Asana++Math 10μ
+MC 190 75 1 0 ihram.res
+FCJ
+TY 60 75 4 3 0 0 0 Asana++Math 
+TY 181 79 4 3 0 0 0 Asana++Math 22k
+MC 190 90 0 0 045
+MC 200 75 0 0 577
+LI 190 75 200 75 0
+MC 200 85 0 0 045
+LI 55 25 50 25 0
+TY 9 101 4 3 0 0 0 Asana++Math http://www.dicks-website.eu/micamp2/enindex.html
