@@ -3,6 +3,7 @@
 #ifndef Rotor_h
 #define Rotor_h
 
+
 class Rotor{
   public:
     Rotor(int out_pin,int in_pin,int _offset);

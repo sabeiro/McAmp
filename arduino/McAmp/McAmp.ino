@@ -16,6 +16,7 @@ Rotor rot4(11,A1,200);
 
 SoftwareSerial mySerial(2,1);// RX,TX
 long previousMillis = 0; 
+long currentMillis = 0;
 long interval = 1000;    
 
 
