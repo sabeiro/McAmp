@@ -2,8 +2,8 @@
 #include <SPI.h>
 
 #define cs   10
-#define dc   8
-#define rst  9
+#define dc   9
+#define rst  8
 TFT TFTscreen = TFT(cs, dc, rst);
 
 void setup () {

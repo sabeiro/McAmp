@@ -63,7 +63,7 @@ void setup() {
   tft.setCursor (55, 120);
   tft.setTextSize (2);
   tft.setTextColor(RED);
-  tft.println("POLITEHNIKA");
+  tft.println("Viudi");
   waitOneTouch(true);
   tft.fillScreen(BLUE);
   startGame();
