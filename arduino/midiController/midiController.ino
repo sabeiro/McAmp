@@ -1,11 +1,7 @@
 #include "midi_code.h"
-#include <MIDIUSB.h>
 
-
-int butt[] = {5,6,7,8,9,10,11,12};
-int pott[] = {A0,A1,A2,A3};
-
-void setup(){
+void setup()
+{
   // Taken from http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1208715493/11
   #ifdef FASTADC
     // set prescale to 16
@@ -23,16 +19,20 @@ void setup(){
   #endif
   
   // Initialise each digital input channel.
-  for (i = 0; i < NUM_DI; i++)  {
+  for (i = 0; i < NUM_DI; i++)
+  {
     // Set the pin direction to input.
-    pinMode(digitalInputMapping[i],INPUT);
+    pinMode(digitalInputMapping[i], INPUT);
+
     // Don't enable pullup resistor on LED_PIN, as the LED and resistor will always pull it low, meaning the input won't work.
     // Instead an external pulldown resistor must be used on LED_PIN.
     // NOTE: This will cause all of the high/low logic for LED_PIN to be inverted.
-    if (digitalInputMapping[i] != LED_PIN){
+    if (digitalInputMapping[i] != LED_PIN)
+    {
       // Enable the pull-up resistor. This call must come after the above pinMode call.
       digitalWrite(digitalInputMapping[i], HIGH);
     }
+    
     // Initialise the digital state with a read to the input pin.
     digitalInputs[i] = digitalRead(digitalInputMapping[i]);
   }
@@ -57,19 +57,25 @@ void setup(){
 }
 
 
-void loop(){
+void loop()
+{
   #ifdef DEBUG
     loopTime = micros();
   #endif
   
-  for (i = 0; i < NUM_DI; i++)  {
+  for (i = 0; i < NUM_DI; i++)
+  {
     #ifdef MIDI_FIGHTER
-      if (i >= SKIP_ROW * 4)      {
+      if (i >= SKIP_ROW * 4)
+      {
         digitalOffset = i + 4;
       }
-      else      {
+      else
+      {
     #endif
+ 
     digitalOffset = i;
+    
     #ifdef MIDI_FIGHTER
       }
     #endif
@@ -78,20 +84,24 @@ void loop(){
     tempDigitalInput = digitalRead(digitalInputMapping[i]);
     
     // Check if the last state is different to the current state.
-    if (digitalInputs[i] != tempDigitalInput){
+    if (digitalInputs[i] != tempDigitalInput)
+    {
       #ifdef DEBOUNCE
       // Wait for a short period of time, and then take a second reading from the input pin.
       delay(DEBOUNCE_LENGTH);
       // If the second reading is the same as the initial reading, assume it must be true.
-      if (tempDigitalInput == digitalRead(digitalInputMapping[i])) {
+      if (tempDigitalInput == digitalRead(digitalInputMapping[i]))
+      {
       #endif
         // Record the new digital input state.
         digitalInputs[i] = tempDigitalInput;
         
         // Moved from HIGH to LOW (button pressed)
-        if (digitalInputs[i] == 0) {
+        if (digitalInputs[i] == 0)
+        {
           // All the digital inputs use pullup resistors, except LED_PIN so the logic is inverted
-          if (digitalInputMapping[i] != LED_PIN){
+          if (digitalInputMapping[i] != LED_PIN)
+          {
             noteOn(MIDI_CHANNEL, NOTE + digitalOffset, 0x7F); // Channel 1, middle C, maximum velocity
           }
           else
@@ -206,12 +216,14 @@ void loop(){
 }
 
 // Send a MIDI note on message
-void noteOn(byte channel, byte pitch, byte velocity){
+void noteOn(byte channel, byte pitch, byte velocity)
+{
   // 0x90 is the first of 16 note on channels. Subtract one to go from MIDI's 1-16 channels to 0-15
   channel += 0x90 - 1;
   
   // Ensure we're between channels 1 and 16 for a note on message
-  if (channel >= 0x90 && channel <= 0x9F) {
+  if (channel >= 0x90 && channel <= 0x9F)
+  {
     #ifdef DEBUG
       Serial.print("Button pressed: ");
       Serial.println(pitch);
@@ -226,12 +238,14 @@ void noteOn(byte channel, byte pitch, byte velocity){
 }
 
 // Send a MIDI note off message
-void noteOff(byte channel, byte pitch){
+void noteOff(byte channel, byte pitch)
+{
   // 0x80 is the first of 16 note off channels. Subtract one to go from MIDI's 1-16 channels to 0-15
   channel += 0x80 - 1;
   
   // Ensure we're between channels 1 and 16 for a note off message
-  if (channel >= 0x80 && channel <= 0x8F)  {
+  if (channel >= 0x80 && channel <= 0x8F)
+  {
     #ifdef DEBUG
       Serial.print("Button released: ");
       Serial.println(pitch);
@@ -246,7 +260,8 @@ void noteOff(byte channel, byte pitch){
 }
 
 // Send a MIDI control change message
-void controlChange(byte channel, byte control, byte value){
+void controlChange(byte channel, byte control, byte value)
+{
   // 0xB0 is the first of 16 control change channels. Subtract one to go from MIDI's 1-16 channels to 0-15
   channel += 0xB0 - 1;
   
@@ -266,4 +281,3 @@ void controlChange(byte channel, byte control, byte value){
     #endif
   }
 }
-

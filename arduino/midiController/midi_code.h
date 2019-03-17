@@ -42,7 +42,7 @@
 
 
 // Uncomment this line to send debug messages to the serial monitor
-//#define DEBUG
+#define DEBUG
 
 // Uncomment this line to enable outputs corresponding to the MIDI Fighter so MF mappings can be used in Traktor.
 //#define MIDI_FIGHTER
