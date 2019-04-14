@@ -1,4 +1,3 @@
-
 #include "sensorLib.h"
 
 float temperature = 0.;
@@ -13,6 +12,8 @@ void setup() {
     digitalWrite(FIRST_LED+i,LOW);
   }
   pinMode(2,INPUT); // button
+  pinMode(PIN_TRIG, OUTPUT);
+  pinMode(PIN_ECHO, INPUT);
 }
 
 void loop() {
@@ -20,12 +21,14 @@ void loop() {
   poti = analogAverage(PIN_POTI);
   light = analogAverage(PIN_LIGHT);
   temperature = (temperature*voltConv - 0.5)*100.;
-  light = light*voltConv;
-  if(updateTime){
+  measureDistance();
+  if(updateTime()){
+    panicButton();
     levelLed(temperature,tempBase);
     //levelLed(light,lightBase);
     printState(temperature,poti,light);
     setBase();
+    playTone(light);
   }
   delay(5);
 }
